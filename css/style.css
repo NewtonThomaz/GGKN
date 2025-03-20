@@ -23,7 +23,7 @@ nav {
     a {
         display: flex;
         align-items: center;
-        
+
         img {
             height: 50px;
         }
@@ -41,6 +41,7 @@ body {
     color: white;
     height: 300px;
     padding-left: 40px;
+
     h1 {
         font-weight: 200;
         width: 250px;
@@ -55,54 +56,61 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
-    border-radius:  15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
 }
-.linha{
+
+.linha {
     background-color: #3AA3A5;
     height: 8px;
     width: 150px;
     border-radius: 15px;
     margin-top: 5px;
 }
-.carrocel-fora{
+
+.carrocel-fora {
     overflow-x: auto;
+    max-width: 100dvw;
 }
+
 .carrocel {
     display: flex;
     align-items: center;
     height: 150px;
     flex-wrap: nowrap;
 }
+
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 125px;
-    width: 150px;
     background-color: #3AA3A5;
     border-radius: 15px 15px 0 15px;
     margin-inline: 20px;
+    padding-block: 10px;
+    padding-inline: 25px;
     img {
         background-color: white;
         height: 75px;
         width: 100px;
     }
 }
+
 .alinha {
     display: flex;
     align-items: center;
+
+    .play {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 50px;
+    }
 }
-.play {
-    height: 25px;
-    width: 25px;
-    background-color: red;
-    border-radius: 50px;
-    margin-left: 10px;
-}
-.descricao{
-    margin: 10px;
-    border-radius: 5px;
+
+.descricao {
+    margin-top: 20px;
+    border-radius: 5px 5px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,11 +118,13 @@ body {
     width: 75%;
     padding: 15px;
 }
-.coluna{
+
+.coluna {
     background-color: #3AA3A5;
     height: 125px;
     width: 5px;
 }
+
 .alinha p {
     width: 90%;
     padding-left: 5px;
