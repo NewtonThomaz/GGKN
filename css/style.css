@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;700&display=swap rel=stylesheet type=text/css');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Arial', serif;
+    font-family: 'Inclusive Sans', sans-serif;
 }
 
 .logo {
@@ -31,17 +30,19 @@ nav {
 }
 
 body {
-    background-color: black;
     max-width: 100dvw;
 }
 
 .seção1 {
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     color: white;
     height: 300px;
     padding-left: 40px;
-
     h1 {
         font-weight: 200;
         width: 250px;
@@ -87,25 +88,43 @@ body {
     background-color: #3AA3A5;
     border-radius: 15px 15px 0 15px;
     margin-inline: 20px;
-    padding-block: 10px;
+    padding-block: 20px;
     padding-inline: 25px;
+    position: relative;
     img {
         background-color: white;
-        height: 75px;
-        width: 100px;
+        height: 85px;
+        width: 150px;
+        border: 10px;
     }
 }
 
 .alinha {
     display: flex;
     align-items: center;
-
+}
+.alinha2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 2px;
+    color: white;
     .play {
         height: 50px;
         width: 50px;
         background-color: red;
+        margin-bottom: 25px;
         border-radius: 50px;
+        margin-left: 35px;
     }
+}
+.alinha3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .descricao {
@@ -115,11 +134,11 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    width: 75%;
+    width: 400px;
     padding: 15px;
 }
 
-.coluna {
+.colunaVerde {
     background-color: #3AA3A5;
     height: 125px;
     width: 5px;
@@ -128,4 +147,41 @@ body {
 .alinha p {
     width: 90%;
     padding-left: 5px;
+    margin-inline: 10px;
+}
+.tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3AA3A5;
+    border-radius: 0 0 5px 5px;
+    width: 250px;
+    color: white;
+    padding-block: 20px;
+    border-radius: 10px;
+    margin-block: 10px;
+    .quadraro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0D6B6E;
+        border-radius: 5px;
+        height: 60px;
+        width: 60px;
+        margin-top: 10px;
+        margin-inline: 10px;
+        margin-bottom: 2px;
+    }
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+    }
 }
