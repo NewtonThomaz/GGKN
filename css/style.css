@@ -79,7 +79,7 @@ body {
 .carrocel {
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 200px;  
     flex-wrap: nowrap;
 }
 

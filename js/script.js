@@ -8,43 +8,17 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
-function buscar() {
-    document.getElementById("txtBusca").addEventListener("keydown", function (event) {
 
-        let valor = document.getElementById("txtBusca").value.trim();
-        const velida = document.getElementById('txtBusca');
-
-        if (valor === "DukeSquad") {
-            console.log("O valor é 10");
-            Window.Location.href = url('equipe.html');
-            velida.setAttribute('href', 'equipe.html')
-
-        } else {
-            console.log("O valor não é 10");
-            alert("O valor não é 10!");
+function verificarERedirecionar() {
+    const txtBusca = document.getElementById("txtBusca");
+    txtBusca.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            const valor = txtBusca.value.trim();
+            if (valor === "DukeSquad") {
+                window.location.href = "equipe.html";
+            } else {
+                alert("Valor incorreto!");
+            }
         }
-
     });
-} 
-// function buscar() {      
-
-// document.addEventListener("DOMContentLoaded", function () {
-//         document.getElementById("txtBusca").addEventListener("keydown", function (event) {
-//             if (event.key === "Enter") {
-
-//                 let valor = document.getElementById("txtBusca").value.trim();
-//                 const velida = document.getElementById('txtBusca');
-
-//                 if (valor === "DukeSquad") {
-//                     console.log("O valor é 10");
-//                     Window.Location.href = url('equipe.html');
-//                     velida.setAttribute('href', 'equipe.html')
-
-//                 } else {
-//                     console.log("O valor não é 10");
-//                     alert("O valor não é 10!");
-//                 }
-//             }
-//         });
-//     });
-// }
+}
