@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;700&display=swap rel=stylesheet type=text/css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inclusive Sans', sans-serif;
+   
+}
+body{
+    background-color: #0d6b6e;
+}
+.logo {
+    width: 140px;
+}
+nav {
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: #0d6b6e;
+    height: 65px;
+    margin-bottom: 30px;
+   
+
+    a {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 50px;
+        }
+    }
+}
+.Logo-Grande{
+    background-color: #0d6b6e;
+    text-align: center;
+
+}
+.Logo-Grande p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: white;
+   
+    font-size:x-large;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.container{
+   text-align: center;
+    background-color: #0d6b6e;
+   
+    margin-top: 100px;
+    margin-inline: 90px;
+    border-radius: 20px;
+    padding: 50px;
+    height: auto;
+    margin-bottom: 300px;
+
+   
+
+}
+.bigbox{
+    padding-top: 5px;
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: calc(100dvh - 200px);
+   
+}

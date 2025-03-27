@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos</title>
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <link rel="icon" href="img/icon.png">
 </head>
 
@@ -15,15 +15,33 @@
         <img src="img/logo.png" alt="logo GGKN" class="logo">
         <section id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Quem somos</a>
-            <input type="text" id="txtBusca" placeholder="Buscar..." href="" />
-            <img src="img/lupa.png" class="lupa" onclick="buscar()">
+            <a href="index.html">Inicio</a>
+            <a href="quemSoms.html">Quem somos</a>
+            <input type="text" id="txtBusca" placeholder="Buscar..." oninput="verificarERedirecionar()" href="" />
+            <img class="lupa" src="img/lupa.png" />
         </section>
 
         <section id="main">
             <img src="img/menu.png" alt="menu" class="openbtn" onclick="openNav()">
         </section>
     </nav>
+
+    </nav>
+    <section class="Logo-Grande">
+        <img src="img/icon.png" alt="iconeliso">
+        <p>GGKN</p>
+    </section>
+    <section class="bigbox">
+
+        <section class="container">
+            <h1>Sobre nós</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, amet! Nulla sint ullam magnam mollitia
+                voluptatem eos fugit placeat consequuntur velit voluptates itaque sed cupiditate iusto quibusdam nobis,
+                in
+                sequi?</p>
+        </section>
+    </section>
+
 
     <script src="js/script.js" defer></script>
 </body>

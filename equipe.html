@@ -7,6 +7,7 @@
     <title>Equipes</title>
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/equipe.css">
     <link rel="icon" href="img/icon.png">
 </head>
 
@@ -15,15 +16,57 @@
         <img src="img/logo.png" alt="logo GGKN" class="logo">
         <section id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Quem somos</a>
-            <input type="text" id="txtBusca" placeholder="Buscar..." href="" />
-            <img src="img/lupa.png" class="lupa" onclick="buscar()">
+            <a href="index.html">Inicio</a>
+            <a href="quemSoms.html">Quem somos</a>
+            <input type="text" id="txtBusca" placeholder="Buscar..." oninput="verificarERedirecionar()" href="" />
+            <img class="lupa" src="img/lupa.png" />
         </section>
 
         <section id="main">
             <img src="img/menu.png" alt="menu" class="openbtn" onclick="openNav()">
         </section>
     </nav>
+
+    
+
+    <main class="translucido">
+
+        <section class="Colaboradores">
+            <h1>Colaboradores</h1>
+            <ul class="imagensPerfil">
+                <li class="pessoa">
+                    <img src="img/pfg.png" class="fotoDePerfil">
+                    <span>Pessoa 1</span>
+                </li>
+                <li class="pessoa">
+                    <img src="img/pfg.png" class="fotoDePerfil">
+                    <span>Pessoa 2</span>
+                </li>
+                <li class="pessoa">
+                    <img src="img/pfg.png" class="fotoDePerfil">
+                    <span>Pessoa 3</span>
+                </li>
+            </ul>
+        </section>
+
+        <br>
+
+        <section class="Centra">
+            <section class="ExUsu">
+                <h1>A Expericnia com tecnolgia blabla</h1>
+                <br><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo molestiae fugit, vitae, soluta eaque
+                    fuga recusandae debitis velit minima odio natus libero veniam? Nostrum magni quisquam, saepe optio
+                    qui tempora?
+                    Fugiat nemo quibusdam dicta mollitia assumenda nisi dolore deserunt adipisci! Reiciendis eius soluta
+                    natus, velit mollitia nam? Et reprehenderit voluptatem incidunt repellendus quisquam!</p>
+            </section>
+        </section>
+    </main>
+    <section class="uni">
+        <img src="img/Duke.png" alt="">
+    </section>
+    <h1 class="teste">Duke'sSquad</h1>
 
     <script src="js/script.js" defer></script>
 </body>
