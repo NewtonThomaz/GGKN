@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@400;700&display=swap rel=stylesheet type=text/css');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #0D6B6E;
+    height: 60px;
 
     a {
         display: flex;
@@ -43,6 +45,7 @@ body {
     color: white;
     height: 300px;
     padding-left: 40px;
+
     h1 {
         font-weight: 200;
         width: 250px;
@@ -91,6 +94,7 @@ body {
     padding-block: 20px;
     padding-inline: 25px;
     position: relative;
+
     img {
         background-color: white;
         height: 85px;
@@ -103,6 +107,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .alinha2 {
     display: flex;
     align-items: center;
@@ -110,6 +115,7 @@ body {
     margin-top: 85px;
     margin-left: 2px;
     color: white;
+
     .play {
         height: 50px;
         width: 50px;
@@ -119,6 +125,7 @@ body {
         margin-left: 35px;
     }
 }
+
 .alinha3 {
     display: flex;
     justify-content: center;
@@ -149,6 +156,7 @@ body {
     padding-left: 5px;
     margin-inline: 10px;
 }
+
 .tempo {
     display: flex;
     flex-direction: column;
@@ -161,6 +169,7 @@ body {
     padding-block: 20px;
     border-radius: 10px;
     margin-block: 10px;
+
     .quadraro {
         display: flex;
         align-items: center;
@@ -174,14 +183,44 @@ body {
         margin-bottom: 2px;
     }
 }
-.coluna{
+
+.coluna {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     p {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 60px;
     }
+}
+
+@media (min-width: 1000px) {
+    .seção1 h1 {
+        font-size: 2.5rem;
+        margin-left: 150px;
+    }
+
+    .tempo {
+        width: 400px;
+    }
+
+    .tempo .quadraro {
+        height: 90px;
+        width: 90px;
+
+    }
+
+    .tempo .quadraro h2 {
+        font-size: 2.5em;
+
+    }
+
+    .tempo p {
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+
 }
